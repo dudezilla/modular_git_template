@@ -1,22 +1,14 @@
+
 import os
-import platform
 import subprocess
 
 def create_and_activate_venv():
     # Create a virtual environment
     subprocess.run(['python', '-m', 'venv', 'venv'])
 
-    # Activate the virtual environment
-    if platform.system() == "Windows":
-        activate_script = os.path.join('venv', 'Scripts', 'activate')
-    else:
-        activate_script = os.path.join('venv', 'bin', 'activate')
-
-    # Activation needs to be done in shell, so we write a separate script
-    if platform.system() == "Windows":
-        activate_command = f'{activate_script} && '
-    else:
-        activate_command = f'source {activate_script} && '
+    # Since this is Windows-specific, we'll specify the Windows activation method directly
+    activate_script = os.path.join('venv', 'Scripts', 'activate')
+    activate_command = f'{activate_script} && '
 
     return activate_command
 
