@@ -40,8 +40,7 @@ Use this snippet to create an initial repository setup:
 
 ```bash
 
-...  git clone (this repo)
-Or just look at the script you can copy paste
+...  git clone git@github.com:dudezilla/modular_git_template.git
 
 ```
 
@@ -58,7 +57,8 @@ To use the Python script to automate the process of setting up a Git repository 
    python template.py
    ```
 
-   Replace `script_name.py` with the name of your Python file if changed.
+   Replace `template.py` with the name of your Python file if changed.
+   But you must have a repos_config.json file to describe submodules.
 
 ### 3. Script Functions
 
