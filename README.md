@@ -41,8 +41,14 @@ Use this snippet to create an initial repository setup:
 ```bash
 
 ...  git clone git@github.com:dudezilla/modular_git_template.git
-
+     python -m venv venv
+     (activate venv) venv/scripts/activate on Windows or source ./venv/bin/activate
+     cd ./modular_git_template
+     pip install -r requirements.txt
+     python template.py
 ```
+-**on Debian based systems python3 is used to start Python rather than python.
+
 ### Script Functions
 
 - **`load_config(file_path)`**: Loads the configuration from a JSON file.
