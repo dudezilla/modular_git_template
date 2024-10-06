@@ -55,7 +55,7 @@ To use the Python script to automate the process of setting up a Git repository 
 
 3. **Run the script** to set up the repository and its submodules:
    ```bash
-   python script_name.py
+   python template.py
    ```
 
    Replace `script_name.py` with the name of your Python file if changed.
