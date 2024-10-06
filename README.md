@@ -43,24 +43,7 @@ Use this snippet to create an initial repository setup:
 ...  git clone git@github.com:dudezilla/modular_git_template.git
 
 ```
-
-### 2. Running the Script
-
-To use the Python script to automate the process of setting up a Git repository with submodules, follow these steps:
-
-1. **Clone or download this repository** to your local machine.
-
-2. **Ensure `repos_config.json` is correctly configured** according to your needs.
-
-3. **Run the script** to set up the repository and its submodules:
-   ```bash
-   python template.py
-   ```
-
-   Replace `template.py` with the name of your Python file if changed.
-   But you must have a repos_config.json file to describe submodules.
-
-### 3. Script Functions
+### Script Functions
 
 - **`load_config(file_path)`**: Loads the configuration from a JSON file.
 - **`initialize_repo(parent_dir)`**: Creates a directory if it doesn't exist, initializes it as a Git repository.
@@ -79,7 +62,7 @@ You'll see the following message upon successful completion:
 
 ```plaintext
 Repository setup complete. You can clone it using:
-git clone --recurse-submodules git@github.com:dudezilla/modular_git_template.git
+git clone --recurse-submodules git@github.com:dudezilla/<>
 ```
 
 ## License
