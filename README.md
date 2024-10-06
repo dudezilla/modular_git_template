@@ -79,7 +79,7 @@ You'll see the following message upon successful completion:
 
 ```plaintext
 Repository setup complete. You can clone it using:
-git clone --recurse-submodules <repository-url>
+git clone --recurse-submodules git@github.com:dudezilla/modular_git_template.git
 ```
 
 ## License
