@@ -21,18 +21,14 @@ def create_and_activate_venv():
     return activate_command
 
 def install_requirements_and_run_template(activate_command):
-    # Define commands to run 
-    commands = [
-        'cd modular_git_template',
-        'pip install -r requirements.txt',
-        'python template.py'
-    ]
-    
-    # Combine activate command with other commands
-    full_command = activate_command + " && ".join(commands) if activate_command else " && ".join(commands)
+    # Change directory
+    subprocess.run(['cd', 'modular_git_template'], shell=True, check=True)
 
-    # Run the combined command in new shell
-    subprocess.run(full_command, shell=True, check=True)
+    # Install requirements
+    subprocess.run(['pip', 'install', '-r', 'requirements.txt'], shell=True, check=True)
+
+    # Run the template script
+    subprocess.run(['python', 'template.py'], shell=True, check=True)
 
 if __name__ == "__main__":
     activate_cmd = create_and_activate_venv()
