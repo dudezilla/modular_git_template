@@ -39,8 +39,10 @@ The repository configuration is specified in a JSON file named `repos_config.jso
 Use this snippet to create an initial repository setup:
 
 ```bash
-git clone --recurse-submodules <repository-url>
-# Replace <repository-url> with the actual URL of your main repository
+
+...  git clone (this repo)
+Or just look at the script you can copy paste
+
 ```
 
 ### 2. Running the Script
