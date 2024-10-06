@@ -1,0 +1,10 @@
+{
+    "parent_dir": "uses_db",
+    "submodules": [
+        {
+            "url": "git@github.com:dudezilla/make_db.git",
+            "path": "make_db"
+        }
+
+    ]
+}
