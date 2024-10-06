@@ -13,7 +13,7 @@ def initialize_repo(parent_dir):
     if not os.path.exists(parent_dir):
         os.makedirs(parent_dir)
     else:
-        print("What the fuck is this about?")
+        print("What the **** is this about?")
     repo = Repo.init(parent_dir)
     return repo
 
