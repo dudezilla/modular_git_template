@@ -6,7 +6,7 @@
             "path": "make_db"
         },
         {
-            "url": "git@github.com:dudezilla/make_db.git",
+            "url": "git@github.com:dudezilla/dz_debug.git",
             "path": "dz_debug"
         }
 
